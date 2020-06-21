@@ -1,14 +1,15 @@
 :root {
     font-size: 16px;
-    font-family: 'Fira Sans', sans-serif;
-    --text-primary: #424242;
+    --text-primary: #292F38;
+    --text-sub: #79878e;
     --nav-border-radius: 10px;
     --content-border-radius: 4px;
     --backgroung-gradient-start-color: #93a5cf;
     --backgroung-gradient-end-color: #e4efe9;
     --content-area-bg-color: #fff;
     --default-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-    --font-family: 'Fira Sans', sans-serif;
+    --font-family-main: 'Work Sans', sans-serif;
+    --font-family-second: 'Roboto Slab', serif;
     --color-primary: #2f5ee8;
     --color-7: #AB47BC;
 }
@@ -19,7 +20,9 @@
 
 body {
     background-image: linear-gradient(45deg, var(--backgroung-gradient-start-color) 0%, var(--backgroung-gradient-end-color) 100%);
-    font-family: var (var(--font-family));
+    font-family: var(--font-family-main);
+    font-weight: 400;
+    color: var(--text-primary);
     display: flex;
     margin: 0;
     padding: 0;
@@ -45,6 +48,7 @@ body {
 
 nav {
     position: fixed;
+    text-transform: uppercase;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -102,9 +106,10 @@ main {
 }
 
 .is-logo {
-    max-width: 125px;
+    max-width: 110px;
     object-fit: fill;
     margin-left: 1em;
+    padding-top: .5em;
 }
 
 .is-logo img {
@@ -288,6 +293,7 @@ ul.nav-bar .nav-item.is-brand {
 .is-dropdown-content ul.nav-bar .nav-link {
     color: #fff;
     height: auto;
+    font-size: .9rem;
 }
 
 .is-sub-menu-indented {
@@ -331,6 +337,24 @@ ul.nav-bar .nav-item.is-brand {
 }
 
 
+/* TYPOGRAPHY */
+
+h1 {
+    margin: .5em 0;
+    font-size: 2.3rem;
+    font-weight: 800;
+    font-family: var(--font-family-main);
+    color: var(--text-primary);
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--font-family-second);
+    color: var(--text-sub);
+}
+
+
 /* BREAKPOINTS */
 
 
@@ -360,9 +384,9 @@ ul.nav-bar .nav-item.is-brand {
         position: unset;
         display: inline-flex;
         height: 100%;
-        min-height: 70vh;
+        min-height: 50vh;
         transform: translateX(-80px);
-        margin-top: 2.4em;
+        margin-top: 1.5em;
         border-radius: var(--nav-border-radius);
     }
 
@@ -400,7 +424,7 @@ ul.nav-bar .nav-item.is-brand {
 
     ul.nav-bar .nav-item.is-brand {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         height: 3em;
     }
@@ -412,13 +436,14 @@ ul.nav-bar .nav-item.is-brand {
     }
 
     .is-link-text {
-        font-size: 1rem;
+        font-size: .9rem;
         margin-left: 1rem;
         white-space: nowrap;
     }
 
     main {
-        margin-right: 3em;
+        margin-right: 1.5em;
+        margin-left: -1.5em;
     }
 
     .is-spark {
