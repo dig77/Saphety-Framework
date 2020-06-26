@@ -1,6 +1,11 @@
 :root {
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
+    --bg-color: #E9ECED;
+    /*--bg-color: transparent;*/
+    --bg-content: white;
+    --text-color: #50596c;
+    --text-color-darker: #455a64;
     --text-primary: #424242;
     --nav-border-radius: 10px;
     --content-border-radius: 4px;
@@ -11,6 +16,11 @@
     --font-family: 'Fira Sans', sans-serif;
     --color-primary: #2f5ee8;
     --color-7: #AB47BC;
+    --main-color: #009afa;
+
+    --card-thin-box-shadow: 0 2px 20px 0 rgba(0,0,0,.05);
+    --card-thin-box-shadow-hover: rgba(45,45,45,.05) 0 2px 2px, rgba(49,49,49,.05) 0 4px 4px, rgba(42,42,42,.05) 0 8px 8px, rgba(32,32,32,.05) 0 16px 16px, rgba(49,49,49,.05) 0 32px 32px, rgba(35,35,35,.05) 0 64px 64px;
+
 }
 
 * {
@@ -19,7 +29,7 @@
 
 body {
     background-image: linear-gradient(45deg, var(--backgroung-gradient-start-color) 0%, var(--backgroung-gradient-end-color) 100%);
-    font-family: var (var(--font-family));
+    font-family: var(--font-family);
     display: flex;
     margin: 0;
     padding: 0;
