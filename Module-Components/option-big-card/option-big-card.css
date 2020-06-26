@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 350px;
+    width: 320px;
     background-color: var(--bg-content);
     box-shadow: var(--card-thin-box-shadow);
     transition: box-shadow 0.3s ease-out, transform 0.3s ease-out,
