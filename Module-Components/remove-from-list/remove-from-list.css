@@ -1,0 +1,27 @@
+body {
+    background-color: var(--content-area-bg-color);
+}
+.remove-from-list {
+    margin-right: auto;
+    margin-left: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-from-list .remove-action-icon {
+    display: inline-flex;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.3rem .5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.remove-from-list .remove-action-icon:hover {
+    background: var(--danger-color);
+    color: var(--text-in-reverse-color);
+    transition: all .4s ease-in-out;
+}

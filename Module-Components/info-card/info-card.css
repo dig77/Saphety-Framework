@@ -1,0 +1,17 @@
+.info-card {
+    background-color: var(--info-card-bg-color);
+    color: var(--info-card-color);
+    padding: .75rem 1.25rem;
+    border-radius: .45rem;
+    border: 1px solid #bee5eb;
+    box-shadow: var(--card-thin-box-shadow);
+    width: 100%;
+}
+.info-card .info-card-title {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+.info-card .info-card-content p {
+    margin: 0;
+}
