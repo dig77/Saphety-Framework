@@ -88,7 +88,6 @@ main {
     height: 100%;
 }
 
-
 .is-title {
     font-size: 2em;
     font-weight: 700;
@@ -305,6 +304,17 @@ ul.nav-bar .nav-item.is-brand {
     padding-left: 3.3em;
 }
 
+/* RESPONSIVE 12 COL GRID */
+
+.is-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 20px;
+  }
+  
+  .is-grid-wrapper>div {
+    grid-column: col-start 1 /-1;
+  }
 
 /* BREAKPOINTS */
 
