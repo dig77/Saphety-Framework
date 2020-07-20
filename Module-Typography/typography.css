@@ -1,0 +1,44 @@
+/* PAGE LOCAL STYLING */
+
+.is-simple-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 0 25px rgba(40, 47, 60, 0.05),
+    0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05);
+  border-collapse: collapse;
+  margin-top: 5em;
+}
+
+.is-simple-table thead th {
+  padding: 15px 25px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #848181;
+  border: none;
+  text-align: left;
+}
+
+.is-simple-table tbody tr:nth-of-type(odd) {
+  background-color: #f7f8fb;
+}
+
+.is-simple-table tbody td {
+  font-size: 0.8125rem;
+  vertical-align: middle;
+  padding: 30px 25px;
+  border-top: 1px solid #dee2e6;
+}
+
+.is-simple-table .is-sub-heading.color {
+    font-family: var(--font-family-alternative);
+    color: var(--text-alternative);
+}
+
+.is-simple-table .is-sub-heading.font {
+    font-family: var(--font-family-alternative);
+    color: var(--text-alternative);
+}
