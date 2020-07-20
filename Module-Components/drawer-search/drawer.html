@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../stylo.css"/>
     <link rel="stylesheet" href="../buttons/button.css"/>
     <link
       rel="stylesheet"
@@ -14,6 +15,7 @@
   <body>
     <div class="example-container">
       <form action="" name="myForm" onsubmit="return validateForm()">
+        <div class="overlay"></div>
         <!-- filters area -->
         <div class="drawer-area-wrap">
           <div class="drawer-area inside-wrap">
@@ -69,9 +71,9 @@
         </div>
         <!-- content -->
         <div class="is-content">
-          <h3>
+          <h1>
             Example for drawer advanced search
-          </h3>
+          </h1>
           <p>
             Nunc ac dui in tortor molestie ultricies. Donec tempus laoreet ante,
             vitae posuere lacus ullamcorper ac. In ex nunc, convallis eu nunc
@@ -113,13 +115,16 @@
       const showDrawer = document.querySelector(".is-search-advanced");
       const closeDrawer = document.querySelector(".drawer-close");
       const isDrawer = document.querySelector(".drawer-area-wrap");
+      const isOverlay = document.querySelector(".overlay");
 
       showDrawer.addEventListener("click", function () {
         isDrawer.classList.toggle("is-expanded");
+        isOverlay.classList.toggle("show");
       });
 
       closeDrawer.addEventListener("click", function () {
         isDrawer.classList.toggle("is-expanded");
+        isOverlay.classList.toggle("show");
       });
     </script>
   </body>

@@ -1,10 +1,4 @@
-/* GLOBAL PAGE STYLES */
-
-body {
-  background: #f5f5f5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+/* PAGE LOCAL STYLES */
 
 .example-container {
   max-width: 72em;
@@ -18,15 +12,9 @@ body {
   margin-top: 3em;
 }
 
-.is-content h3 {
-  font-size: 2.5rem;
-  margin: 0.5em 0 1em;
-}
-
 .is-content p {
   font-size: 1.1rem;
   line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 /* DRAWER STYLING */
@@ -41,6 +29,15 @@ body {
   right: 0;
   visibility: hidden;
   transition: visibility 0s 0.3s;
+}
+
+.drawer-area-wrap:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: red;
 }
 
 .drawer-area-wrap.is-expanded {
@@ -79,6 +76,12 @@ body {
 .drawer-head .drawer-close {
   font-size: 1.5rem;
   color: #cecece;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.drawer-head .drawer-close:hover {
+  color: #333;
 }
 
 .inside-wrap {
@@ -101,6 +104,21 @@ body {
   margin-top: auto;
   display: flex;
   justify-content: center;
+}
+
+/* OVERLAY */
+.overlay {
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #00000026;
+  width: 100%;
 }
 
 /* SEARCH ELEMENT STYLING */
@@ -181,5 +199,3 @@ body {
   font-size: 1.3rem;
   color: #2196f3;
 }
-
-
