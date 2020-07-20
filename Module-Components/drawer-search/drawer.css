@@ -1,0 +1,185 @@
+/* GLOBAL PAGE STYLES */
+
+body {
+  background: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.example-container {
+  max-width: 72em;
+  margin: 5em auto;
+}
+
+.is-content {
+  z-index: 0;
+  background: #fff;
+  padding: 2em 2.5em;
+  margin-top: 3em;
+}
+
+.is-content h3 {
+  font-size: 2.5rem;
+  margin: 0.5em 0 1em;
+}
+
+.is-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+/* DRAWER STYLING */
+
+.drawer-area-wrap {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 19%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.3s;
+}
+
+.drawer-area-wrap.is-expanded {
+  visibility: visible;
+  transition: none;
+}
+
+.is-expanded .drawer-area {
+  transform: translateX(0);
+}
+
+.drawer-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.drawer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-head h5 {
+  font-size: 1.3rem;
+  color: #919191;
+}
+
+.drawer-head .drawer-close {
+  font-size: 1.5rem;
+  color: #cecece;
+}
+
+.inside-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  box-sizing: border-box;
+}
+
+.is-field {
+  background: rgb(241, 241, 241);
+  margin: 1em 0;
+  min-height: 50px;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+}
+
+.drawer-action {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* SEARCH ELEMENT STYLING */
+
+.is-search-element {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 4px 3px 30px 1px rgba(132, 132, 132, 0.2);
+}
+
+.is-search-element input {
+  flex: 1;
+  margin: 0;
+  padding: 0.7em;
+  border: none;
+  font-size: 1.7rem;
+  outline: none;
+}
+
+.is-search-element input::placeholder {
+  color: #cacaca;
+}
+
+.is-search-advanced i,
+.is-search-submit i {
+  font-size: 2rem;
+}
+
+.is-search-advanced {
+  padding: 1em 1.5em;
+  background: transparent;
+  cursor: pointer;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  transition: background 0.5s ease;
+}
+
+.is-search-advanced i {
+  color: #717a81;
+}
+
+.is-search-advanced:hover {
+  background: rgb(234, 236, 238);
+}
+
+.is-search-submit {
+  padding: 0;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.is-search-submit i {
+  color: #2196f3;
+}
+
+.is-search-submit:hover {
+  transform: scale(1.15);
+}
+
+.is-search-submit button {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1.2em 1.5em;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.is-search-submit span {
+  margin: 0 0.6em;
+  font-size: 1.3rem;
+  color: #2196f3;
+}
+
+
