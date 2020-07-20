@@ -1,26 +1,31 @@
 :root {
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --font-family-alternative: SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono",
+    "Courier New", monospace;
+    --rich-bg-color: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    --nav-rich-color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
     --bg-color: #E9ECED;
-    /*--bg-color: transparent;*/
     --bg-content: white;
     --text-color: #50596c;
     --text-in-reverse-color: white;
     --danger-color:  #FF5722;
     --text-color-darker: #455a64;
     --text-primary: #424242;
+    --text-alternative: #909090;
     --nav-border-radius: 10px;
     --content-border-radius: 4px;
     --backgroung-gradient-start-color: #93a5cf;
     --backgroung-gradient-end-color: #e4efe9;
     --content-area-bg-color: #fff;
     --default-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-    /* --font-family-main: 'Work Sans', sans-serif;
-    --font-family-second: 'Roboto Slab', serif; */
     --color-primary: #2f5ee8;
     --color-7: #AB47BC;
     --main-color: #009afa;
+    --menu-bg-links: #4a4576;
+    --menu-bg-links-hover: #00000040;
 
     --card-thin-box-shadow: 0 2px 20px 0 rgba(0,0,0,.05);
     --card-thin-box-shadow-hover: rgba(45,45,45,.05) 0 2px 2px, rgba(49,49,49,.05) 0 4px 4px, rgba(42,42,42,.05) 0 8px 8px, rgba(32,32,32,.05) 0 16px 16px, rgba(49,49,49,.05) 0 32px 32px, rgba(35,35,35,.05) 0 64px 64px;
@@ -33,14 +38,20 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height:100%;
+}
+
 body {
-    background-color: var(--bg-color);
+    font-family: var(--font-family-main);
+    background-image: var(--rich-bg-color);
     font-weight: 400;
     color: var(--text-primary);
     display: flex;
     margin: 0;
     padding: 0;
     padding: 2em 4em;
+    min-height: 100%;
 }
 
 .is-main-content-area {
@@ -65,7 +76,8 @@ nav {
     width: 100%;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-image: var(--nav-rich-color);
+    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
     box-shadow: 4px 13px 30px 1px rgb(159, 174, 199);
     transition: width .3s;
 }
@@ -93,6 +105,12 @@ main {
     color: var(--text-primary);
     margin-bottom: 30px;
     line-height: 1.7em;
+}
+
+.sub-heading {
+    font-family:var(--font-family-alternative);
+    color: var(--text-alternative);
+    font-size: 1.5rem;
 }
 
 .is-button {
@@ -281,7 +299,7 @@ ul.nav-bar .nav-item.is-brand {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 165px;
-    background: #1f3f77;
+    background: var(--menu-bg-links);
     transform: translateX(25%);
     transition: all .3s;
 }
@@ -299,7 +317,7 @@ ul.nav-bar .nav-item.is-brand {
 
 .is-dropdown-content ul.nav-bar .nav-item:hover {
     margin-bottom: 0;
-    background: #1976D2;
+    background: var(--menu-bg-links-hover);
 }
 
 .is-dropdown-content ul.nav-bar .nav-link {
@@ -379,7 +397,6 @@ ul.nav-bar .nav-item.is-brand {
         height: 100%;
         min-height: 70vh;
         transform: translateX(-80px);
-        margin-top: 2.4em;
         border-radius: var(--nav-border-radius);
     }
 
