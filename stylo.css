@@ -342,6 +342,7 @@ ul.nav-bar .nav-item.is-brand {
 
   nav {
     width: 17em;
+    margin-top: 1.5em;
     position: unset;
     display: inline-flex;
     height: 100%;
