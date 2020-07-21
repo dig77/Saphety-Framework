@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../stylo.css" />
+    <link rel="stylesheet" href="../buttons/button.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="search.css" />
+    <title>Basic Advanced Search</title>
+  </head>
+  <body>
+    <div class="example-container">
+      <form action="" name="myForm">
+        <!-- content -->
+        <div class="is-content">
+          <!-- search area -->
+          <div class="is-search-element">
+            <input
+              type="search"
+              name="isName"
+              id=""
+              placeholder="Insert your query..."
+              required
+            />
+            <div class="is-search-advanced" title="Filters">
+              <i class="fas fa-angle-down arrow-icon"></i>
+            </div>
+            <div class="is-search-submit">
+              <button type="submit">
+                <i class="fas fa-search fa-fw"></i>
+                <span>Search</span>
+              </button>
+            </div>
+          </div>
+          <!-- filters area -->
+          <div class="filters-area-wrap">
+            <div class="filters-area inside-wrap">
+              <div class="drawer-content">
+                <div class="filters-head">
+                  <h5>Advanced Search Title</h5>
+                  <div class="filters-close">
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+                <div class="is-grid-wrapper">
+                  <div class="is-field">
+                    Name
+                  </div>
+                  <div class="is-field">
+                    NIF
+                  </div>
+                  <div class="is-field">
+                    Email
+                  </div>
+                  <div class="is-field">
+                    City
+                  </div>
+                  <div class="is-field">
+                    Code
+                  </div>
+                  <div class="is-field">
+                    Mobile
+                  </div>
+                </div>
+              </div>
+              <div class="filters-action">
+                <button class="is-button is-primary">
+                  <i class="fas fa-th-list"></i>
+                  <span>Search Filters</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- page content -->
+          <h1>
+            Example for simple advanced search
+          </h1>
+          <p>
+            Nunc ac dui in tortor molestie ultricies. Donec tempus laoreet ante,
+            vitae posuere lacus ullamcorper ac. In ex nunc, convallis eu nunc
+            ac, pharetra facilisis lectus. Donec metus ex, sollicitudin id
+            vulputate sit amet, egestas a dolor. Mauris eget dolor ut nisl
+            egestas aliquet a tincidunt turpis. Nunc pellentesque risus sit amet
+            pharetra malesuada. Praesent eleifend sapien vitae ex consequat
+            vulputate. Donec ac magna ante. Fusce massa lacus, porttitor non
+            rutrum ut, faucibus id sapien. Ut magna augue, ultrices ac placerat
+            nec, iaculis ut massa.
+          </p>
+          <p>
+            Suspendisse sit amet arcu consectetur, ultricies neque a, congue
+            lectus. Nullam nec neque sollicitudin, dignissim urna id,
+            pellentesque orci. Nam vestibulum rhoncus luctus. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Sed accumsan porta erat, non ultrices sem suscipit
+            ac. Cras ac maximus enim, id condimentum orci. Mauris tempus
+            imperdiet aliquet. Suspendisse ut ante laoreet, tempor urna a,
+            commodo justo. Sed tempus libero id iaculis semper. Proin iaculis
+            mattis nunc, ac congue lacus porttitor quis. Donec scelerisque leo
+            id vestibulum eleifend.
+          </p>
+          <p>
+            Curabitur faucibus, turpis tempor ornare viverra, nunc tellus
+            commodo nunc, ut ultricies nulla nisi ut mauris. Duis non pretium
+            magna. Cras eget purus egestas, sodales augue non, tincidunt nisi.
+            Quisque consectetur volutpat ipsum. Mauris id eleifend arcu. Nam
+            massa diam, finibus vitae dolor sit amet, commodo volutpat ipsum.
+            Nam suscipit ligula sed magna tincidunt, eget finibus diam
+            tincidunt. Phasellus metus enim, lacinia vitae pretium sit amet,
+            elementum sit amet lectus. Nulla tincidunt est ac tortor aliquam
+            malesuada. Donec porttitor purus mi, ut ultricies nisi blandit id.
+          </p>
+        </div>
+      </form>
+    </div>
+    <script>
+      const showSearch = document.querySelector(".is-search-advanced");
+      const closeSearch = document.querySelector(".filters-close");
+      const isSearch = document.querySelector(".filters-area-wrap");
+      const animateIcon = document.querySelector(".arrow-icon");
+
+      showSearch.addEventListener("click", function () {
+        isSearch.classList.toggle("expanded");
+        animateIcon.classList.toggle("rotate-icon");
+      });
+
+      closeSearch.addEventListener("click", function () {
+        isSearch.classList.toggle("expanded");
+      });
+    </script>
+  </body>
+</html>
