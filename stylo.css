@@ -443,6 +443,6 @@ ul.nav-bar .nav-item.is-brand {
 
 @media screen and (min-width: 100em) {
   nav {
-    min-height: 75vh;
+    min-height: 50vh;
   }
 }
