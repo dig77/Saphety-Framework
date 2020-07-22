@@ -2,6 +2,12 @@ body {
     flex-direction:column;
 }
 
+.example-container {
+    max-width: 72em;
+    margin: 5em auto;
+    width: 100%;
+  }
+
 .is-content-empty {
     z-index: 0;
     background: #fff;
@@ -22,10 +28,10 @@ body {
 }
 .placeholder-wrap span {
     font-size: 9rem;
-    background: -webkit-linear-gradient(#2f5ee8, #ab47bc);
+    background: -webkit-linear-gradient(#2f5ee8, #b7b7b7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: .6;
+    opacity: .3;
 }
 
 .placeholder-wrap p {
