@@ -7,7 +7,7 @@
   --font-family-alternative: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   --rich-bg-color: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  --nav-rich-color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  --nav-rich-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --bg-color: #e9eced;
   --bg-content: white;
   --text-color: #50596c;
@@ -25,8 +25,8 @@
   --color-primary: #2f5ee8;
   --color-7: #ab47bc;
   --main-color: #009afa;
-  --menu-bg-links: #4a4576;
-  --menu-bg-links-hover: #00000040;
+  --menu-bg-links: #424f5c;
+  --menu-bg-links-hover: #00000050;
   --card-thin-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
   --card-thin-box-shadow-hover: rgba(45, 45, 45, 0.05) 0 2px 2px,
     rgba(49, 49, 49, 0.05) 0 4px 4px, rgba(42, 42, 42, 0.05) 0 8px 8px,
