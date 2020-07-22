@@ -2,20 +2,29 @@
 
 :root {
   font-size: 16px;
+
+  /* typography */
   --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-alternative: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  --text-primary: #424242;
+  --text-alternative: #909090;
+  --text-in-reverse-color: white;
+  /* framework colors */
+  --color-primary: #2f5ee8;
+  --color-secondary: #464555;
+  /* nav icon colors */
+  --nav-icon-1: #5c6bc0;
+  --nav-icon-2: #3949ab;
+  --nav-icon-3: #1565c0;
+
+
   --rich-bg-color: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   --nav-rich-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
   --bg-color: #e9eced;
   --bg-content: white;
-  --text-color: #50596c;
-  --text-in-reverse-color: white;
-  --danger-color: #ff5722;
-  --text-color-darker: #455a64;
-  --text-primary: #424242;
-  --text-alternative: #909090;
+
   --nav-border-radius: 10px;
   --content-border-radius: 4px;
   --backgroung-gradient-start-color: #93a5cf;
@@ -34,13 +43,7 @@
   --info-card-bg-color: #d1ecf1;
   --info-card-color: #0c5460;
 
-  /* framework colors */
-  --color-primary: #2f5ee8;
-  --color-secondary: #464555;
-  /* nav icon colors */
-  --nav-icon-1: #5C6BC0;
-  --nav-icon-2: #3949AB;
-  --nav-icon-3: #283593;
+
 }
 
 * {
@@ -117,21 +120,21 @@ main {
   color: #424e5b7a;
   line-height: 1.5;
   font-weight: 100;
-  padding: 0 0.5em 1em ;
+  padding: 0 0.5em 1em;
 }
 
 .is-hero {
-  display:flex;
-  justify-content:space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .is-hero > div {
   font-size: 10rem;
-    background: -webkit-linear-gradient(#2f5ee8, #b7b7b7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: .4;
-    margin: .3em 0;
+  background: -webkit-linear-gradient(#2f5ee8, #b7b7b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.4;
+  margin: 0.3em 0;
 }
 
 .sub-heading {
