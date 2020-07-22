@@ -55,6 +55,10 @@ body {
   min-height: 100%;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .is-main-content-area {
   width: 90%;
   height: 100%;

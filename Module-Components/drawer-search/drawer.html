@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../stylo.css"/>
-    <link rel="stylesheet" href="../buttons/button.css"/>
+    <link rel="stylesheet" href="../../stylo.css" />
+    <link rel="stylesheet" href="../buttons/button.css" />
+    <link rel="stylesheet" href="../placeholder/placeholder.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -46,7 +47,7 @@
               <button class="is-button is-primary">
                 <i class="far fa-edit"></i>
                 <span>Search Filters</span>
-            </button>
+              </button>
             </div>
           </div>
         </div>
@@ -69,8 +70,15 @@
             </button>
           </div>
         </div>
+        <!-- empty placeholder -->
+        <div class="is-content-empty">
+          <div class="placeholder-wrap">
+            <span><i class="fas fa-poll-h"></i></span>
+            <p>Start your search</p>
+          </div>
+        </div>
         <!-- content -->
-        <div class="is-content">
+        <div class="is-content is-hidden">
           <h1>
             Example for drawer advanced search
           </h1>

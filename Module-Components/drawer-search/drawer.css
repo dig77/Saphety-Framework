@@ -3,6 +3,7 @@
 .example-container {
   max-width: 72em;
   margin: 5em auto;
+  width: 100%;
 }
 
 .is-content {
