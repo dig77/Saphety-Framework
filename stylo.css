@@ -106,12 +106,11 @@ main {
 
 .strong-quote {
   font-family: var(--font-family-alternative);
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   color: #424e5b7a;
   line-height: 1.5;
   font-weight: 100;
-  padding: 1em;
-
+  padding: 3.5em 0.5em;
 }
 
 .sub-heading {
