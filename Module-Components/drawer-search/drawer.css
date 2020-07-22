@@ -138,7 +138,7 @@
   margin: 0;
   padding: 0.7em;
   border: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   outline: none;
 }
 
@@ -148,7 +148,7 @@
 
 .is-search-advanced i,
 .is-search-submit i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .is-search-advanced {
@@ -165,7 +165,7 @@
 }
 
 .is-search-advanced:hover {
-  background: rgb(234, 236, 238);
+  background: rgb(219, 219, 219);
 }
 
 .is-search-submit {
@@ -199,4 +199,5 @@
   margin: 0 0.6em;
   font-size: 1.3rem;
   color: #2196f3;
+  transition: all .5s;
 }
