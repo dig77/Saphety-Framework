@@ -175,7 +175,7 @@
 }
 
 .is-search-submit i {
-  color: #2196f3;
+  color: var(--color-primary);
 }
 
 .is-search-submit:hover {
@@ -198,6 +198,6 @@
 .is-search-submit span {
   margin: 0 0.6em;
   font-size: 1.3rem;
-  color: #2196f3;
+  color: var(--color-primary);
   transition: all .5s;
 }

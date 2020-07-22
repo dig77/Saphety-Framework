@@ -91,7 +91,7 @@ h1 {
 }
 
 .is-search-submit i {
-  color: #2196f3;
+  color: var(--color-primary);
 }
 
 .is-search-submit:hover {
@@ -114,7 +114,7 @@ h1 {
 .is-search-submit span {
   margin: 0 0.6em;
   font-size: 1.3rem;
-  color: #2196f3;
+  color: var(--color-primary);
 }
 
 /* FILTERS AREA STYLING */
