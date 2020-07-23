@@ -28,6 +28,38 @@
   text-transform: uppercase;
 }
 
+.swatch.is-primary {
+  background: var(--color-primary);
+}
+
+.swatch.is-secondary {
+  background: var(--color-secondary);
+}
+
+.swatch.is-success {
+  background: var(--color-success);
+}
+
+.swatch.is-info {
+  background: var(--color-info);
+}
+
+.swatch.is-warning {
+  background: var(--color-warning);
+}
+
+.swatch.is-danger {
+  background: var(--color-danger);
+}
+
+.swatch.is-light {
+  background: var(--color-light);
+}
+
+.swatch.is-dark {
+  background: var(--color-dark);
+}
+
 .is-grid-wrapper {
     margin: 5em 0;
 }
