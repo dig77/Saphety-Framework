@@ -1,5 +1,13 @@
 /* PAGE LOCAL STYLING */
 
+.is-list {
+  list-style: normal; 
+}
+.is-list li {
+  line-height: 2;
+  margin:1em 0;
+}
+
 .is-simple-table {
   width: 100%;
   max-width: 100%;
