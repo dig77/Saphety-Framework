@@ -21,6 +21,7 @@
   --color-danger: #c4183c;
   --color-light: #e9ecef;
   --color-dark:#212529;
+  --color-white: #fff;
 
   /* nav icon colors */
   --nav-icon-1: #5c6bc0;
@@ -61,7 +62,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding: 2em 4em;
   min-height: 100%;
 }
 
@@ -76,6 +76,42 @@ body {
 .divider {
   height: 10px;
   margin: 3em 0;
+}
+
+/* GLOBAL ELEMENTS */
+
+.example-container {
+  min-width: 50em;
+  max-width: 72em;
+  margin: 5em auto;
+}
+
+.is-content {
+  z-index: 0;
+  background: #fff;
+  padding: 2em 2.5em;
+  margin-top: 3em;
+}
+
+.is-home-bar {
+  background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    padding: .3em 0;
+}
+
+.is-home-bar > div {
+  display:flex;
+  align-items:center;
+}
+
+.is-home-bar span {
+  color: var(--color-white);
+  margin-right: .5em;
+}
+
+.is-home-bar img {
+  width: 70px;
 }
 
 /* TYPOGRAPHY */

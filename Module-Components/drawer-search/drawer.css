@@ -18,6 +18,7 @@
   line-height: 1.5;
 }
 
+
 /* DRAWER STYLING */
 
 .drawer-area-wrap {
@@ -128,6 +129,7 @@
   display: flex;
   align-items: center;
   padding: 0;
+  background: var(--color-white);
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   box-shadow: 4px 3px 30px 1px rgba(132, 132, 132, 0.2);
@@ -179,7 +181,7 @@
 }
 
 .is-search-submit:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .is-search-submit button {
