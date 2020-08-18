@@ -8,6 +8,25 @@ body {
     width: 100%;
 }
 
+.teste {
+    background: white;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+.teste .circle i {
+    font-size: 10rem;
+    padding: 20px 10px;
+    opacity: .3;
+}
+
+.circle {
+    float: left;
+    height: 200px;
+    width: 200px;
+    shape-outside: circle();
+}
+
 .card-list-wrapper {
     display: flex;
     flex-direction: column;
@@ -16,16 +35,6 @@ body {
 .is-list-card {
     display: flex;
     align-items: center;
-    background-color: var(--color-white);
-    padding: 1.5em 2em;
-    border-radius: var(--content-border-radius);
-    margin-bottom: 1.5em;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    transition: all .3s ease;
-}
-
-.is-list-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 a.is-list-card {
@@ -33,14 +42,29 @@ a.is-list-card {
     color: var(--text-primary);
 }
 
+.is-list-card-content {
+    background-color: var(--color-white);
+    padding: 1.5em 2em;
+    border-radius: var(--content-border-radius);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: all .3s ease;
+}
+
+.is-list-card-content:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
 .is-list-card-icon {
     display: flex;
     padding: .9em .8em;
     background: var(--color-primary);
-    margin-right: 1.2em;
     border-radius: 100%;
     color: var(--text-in-reverse-color);
     font-size: 2rem;
+    border: 40px solid #ebeef3;
+    margin-right: -20px;
+    z-index: 1;
 }
 
 .is-list-card-title {
