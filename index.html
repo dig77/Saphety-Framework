@@ -1,196 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saphety Framework</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;800&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="stylo.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="is-main-content-area">
-      <div class="is-wrapper">
-        <nav>
-          <div class="nav-wrap">
-            <ul class="nav-bar">
-              <li class="nav-item is-brand">
-                <div class="is-spark">
-                  <i class="fas fa-angle-double-right"></i>
-                </div>
-                <div class="is-logo">
-                  <a href="index.html">
-                    <img src="img/is-logo.png" alt="saphety logo" />
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="Module-Typography/typography.html" class="nav-link">
-                  <div class="is-icon is-color-1">
-                    <i class="fas fa-font fa-fw"></i>
-                  </div>
-                  <div class="is-link-text">Typography</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saphety Framework</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;800&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="stylo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="is-main-content-area">
+    <div class="is-wrapper">
+      <nav>
+        <div class="nav-wrap">
+          <ul class="nav-bar">
+            <li class="nav-item is-brand">
+              <div class="is-spark">
+                <i class="fas fa-angle-double-right"></i>
+              </div>
+              <div class="is-logo">
+                <a href="index.html">
+                  <img src="img/is-logo.png" alt="saphety logo" />
                 </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="Module-Colors/colors.html"
-                  class="nav-link"
-                >
-                  <div class="is-icon is-color-2">
-                    <i class="fas fa-tint fa-fw"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="Module-Typography/typography.html" class="nav-link">
+                <div class="is-icon is-color-1">
+                  <i class="fas fa-font fa-fw"></i>
+                </div>
+                <div class="is-link-text">Typography</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Module-Colors/colors.html" class="nav-link">
+                <div class="is-icon is-color-2">
+                  <i class="fas fa-tint fa-fw"></i>
+                </div>
+                <div class="is-link-text">Colors</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="has-sub-level-wrap">
+                <div class="is-icon is-color-3">
+                  <i class="fas fa-code fa-fw"></i>
+                </div>
+                <div class="has-sub-level">
+                  <div class="is-link-text">Components</div>
+                  <div class="has-sub-level-icon">
+                    <i class="fas fa-chevron-right fa-fw"></i>
                   </div>
-                  <div class="is-link-text">Colors</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <div class="has-sub-level-wrap">
-                  <div class="is-icon is-color-3">
-                    <i class="fas fa-code fa-fw"></i>
-                  </div>
-                  <div class="has-sub-level">
-                    <div class="is-link-text">Components</div>
-                    <div class="has-sub-level-icon">
-                      <i class="fas fa-chevron-right fa-fw"></i>
-                    </div>
-                    <div class="is-dropdown-content">
-                      <ul class="nav-bar">
-                        <li class="nav-item">
-                          <a
-                            href="./Module-Components/drawer-search/drawer.html"
-                            class="nav-link"
-                          >
-                            Search (drawer)
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="./Module-Components/basic-search/search.html"
-                            class="nav-link"
-                          >
-                            Search (basic)
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="./Module-Components/buttons/button.html"
-                            class="nav-link"
-                          >
-                            Buttons
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="./Module-Components/tags/tag.html" class="nav-link">
-                            Tags
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            href="./Module-Components/placeholder/placeholder.html"
-                            class="nav-link"
-                          >
-                            Placeholders
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="is-dropdown-content">
+                    <ul class="nav-bar">
+                      <li class="nav-item">
+                        <a href="./Module-Components/card-list/card-list.html" class="nav-link">
+                          Card List
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./Module-Components/drawer-search/drawer.html" class="nav-link">
+                          Search (drawer)
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./Module-Components/basic-search/search.html" class="nav-link">
+                          Search (basic)
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./Module-Components/buttons/button.html" class="nav-link">
+                          Buttons
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./Module-Components/tags/tag.html" class="nav-link">
+                          Tags
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./Module-Components/placeholder/placeholder.html" class="nav-link">
+                          Placeholders
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <h1>Welcome to Saphety framework</h1>
+
+        <div class="sub-heading is-hidden">
+          Almost before we knew it, we had left the ground.
+        </div>
+
+        <div class="is-hero">
+          <div>
+            <i class="fab fa-ethereum"></i>
           </div>
-        </nav>
-        <main>
-          <h1>Welcome to Saphety framework</h1>
-
-          <div class="sub-heading is-hidden">
-            Almost before we knew it, we had left the ground.
+          <div>
+            <i class="fab fa-bity"></i>
           </div>
-
-          <div class="is-hero">
-            <div>
-              <i class="fab fa-ethereum"></i>
-            </div>
-            <div>
-              <i class="fab fa-bity"></i>
-            </div>
-            <div>
-              <i class="fab fa-buffer"></i>
-            </div>
+          <div>
+            <i class="fab fa-buffer"></i>
           </div>
+        </div>
 
-          <h2 class="strong-quote">
-            This is the guiding ethos behind Saphety´s design philosophy and
-            principles. This helps us distinguish every element and every
-            experience Designed by Saphety.
-          </h2>
+        <h2 class="strong-quote">
+          This is the guiding ethos behind Saphety´s design philosophy and
+          principles. This helps us distinguish every element and every
+          experience Designed by Saphety.
+        </h2>
 
-          <p class="is-text">
-            Good design systems can help you create digital products with
-            efficiency and consistency. But great design systems will support
-            and strengthen your team’s creativity at the same time.
-          </p>
+        <p class="is-text">
+          Good design systems can help you create digital products with
+          efficiency and consistency. But great design systems will support
+          and strengthen your team’s creativity at the same time.
+        </p>
 
-          <p class="is-text">
-            A design system is a tool. We can think of it as a collection of
-            reusable components that are guided by a set of standards. You can
-            then use this collection to build any number of applications.
-          </p>
+        <p class="is-text">
+          A design system is a tool. We can think of it as a collection of
+          reusable components that are guided by a set of standards. You can
+          then use this collection to build any number of applications.
+        </p>
 
-          <div class="divider"></div>
+        <div class="divider"></div>
 
-          <p class="is-text">
-            A design system is a collection of assets and a set of standards and
-            documentation that accompanies that collection. A pattern library is
-            a collection of components and guidelines for using them. A style
-            guide is a set of guidelines for the graphic styles, typefaces,
-            colours, images and so on. In a design system, you'll find examples
-            of how to use each component or graphic style along with
-            accessibility information, best practices and guidelines.
-          </p>
+        <p class="is-text">
+          A design system is a collection of assets and a set of standards and
+          documentation that accompanies that collection. A pattern library is
+          a collection of components and guidelines for using them. A style
+          guide is a set of guidelines for the graphic styles, typefaces,
+          colours, images and so on. In a design system, you'll find examples
+          of how to use each component or graphic style along with
+          accessibility information, best practices and guidelines.
+        </p>
 
-          <div class="divider"></div>
+        <div class="divider"></div>
 
-          <p class="is-text">
-            Today, the talent, techniques, thinking and tools of design, like
-            technology, have become more and more abundant and accessible to all
-            alike. Paradoxically, decisions are more distributed, and
-            experiences can become less and less distinctive. The rapid,
-            relentless pace to produce can create an uneven emphasis on
-            immediacy and incrementalism over individuality and innovation.
-          </p>
+        <p class="is-text">
+          Today, the talent, techniques, thinking and tools of design, like
+          technology, have become more and more abundant and accessible to all
+          alike. Paradoxically, decisions are more distributed, and
+          experiences can become less and less distinctive. The rapid,
+          relentless pace to produce can create an uneven emphasis on
+          immediacy and incrementalism over individuality and innovation.
+        </p>
 
-          <div class="divider"></div>
+        <div class="divider"></div>
 
-          <p class="is-text">
-            It is more important than ever that we own our own ethos, make
-            palpable our brand values, and incorporate an instantly identifiable
-            SAPHETYness in everything we do.
-          </p>
+        <p class="is-text">
+          It is more important than ever that we own our own ethos, make
+          palpable our brand values, and incorporate an instantly identifiable
+          SAPHETYness in everything we do.
+        </p>
 
-          <p class="is-text">
-            Given our scale and scope, ‘good design’ is not only a requirement,
-            it’s a deeper responsibility to relationships we seek to serve.
-          </p>
+        <p class="is-text">
+          Given our scale and scope, ‘good design’ is not only a requirement,
+          it’s a deeper responsibility to relationships we seek to serve.
+        </p>
 
-          <div class="divider"></div>
-        </main>
-      </div>
+        <div class="divider"></div>
+      </main>
     </div>
+  </div>
 
-    <script>
-      const trigger = document.querySelector(".is-spark");
-      const myNav = document.querySelector("nav");
+  <script>
+    const trigger = document.querySelector(".is-spark");
+    const myNav = document.querySelector("nav");
 
-      trigger.addEventListener("click", function () {
-        myNav.classList.toggle("collapsed");
-        trigger.classList.toggle("rotate");
-      });
-    </script>
-  </body>
+    trigger.addEventListener("click", function () {
+      myNav.classList.toggle("collapsed");
+      trigger.classList.toggle("rotate");
+    });
+  </script>
+</body>
+
 </html>
