@@ -1,0 +1,75 @@
+body {
+    flex-direction: column;
+}
+
+.example-container {
+    max-width: 72em;
+    margin: 5em auto;
+    width: 100%;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+h3:not(:first-child) {
+    margin-top: 4em;
+}
+
+.is-toastr {
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    color: var(--text-in-reverse-color);
+    padding: 1.5em 1.5em 1.5em 4em;
+    border-radius:var(--content-border-radius);
+    align-items: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.is-toastr.simple {
+    background:var(--color-secondary);
+}
+
+.is-toastr.success {
+    background:var(--color-success);
+}
+
+.is-toastr.error {
+    background:var(--color-danger);
+}
+
+.toastr-icon {
+    position: absolute;
+    font-size:4rem;
+    opacity: .20;
+    top: 10px;
+    left: -25px;
+}
+
+.toastr-title {
+    font-size:1.1rem;
+    font-weight: 700;
+    padding-bottom:.3em;
+}
+
+.toastr-descrip {
+    font-family: var(--font-family-alternative);
+}
+
+.toastr-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: .5;
+    font-size:1.2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.toastr-close:hover {
+    opacity: 1;
+    font-size:1.3rem;
+}
