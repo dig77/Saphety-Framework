@@ -27,19 +27,6 @@
                 <div class="toastr-descrip">
                     This only a small and simple Toastr description.
                 </div>
-                <div class="toastr-details">
-                    <div class="details-inline">
-                        <div class="details-inline-text">
-
-                        </div>
-                        <div class="details-inline-icon">
-
-                        </div>
-                    </div>
-                    <div class="details-expand">
-
-                    </div>
-                </div>
             </div>
             <div class="toastr-close">
                 <i class="fas fa-times"></i>
@@ -75,7 +62,7 @@
             </div>
             <div class="toastr-content">
                 <div class="toastr-title">
-                   Error Toastr title
+                    Error Toastr title
                 </div>
                 <div class="toastr-descrip">
                     This only a small and simple Toastr description.
@@ -85,7 +72,122 @@
                 <i class="fas fa-times"></i>
             </div>
         </div>
+        <!-- list of errors -->
+        <h3>
+            List of errors
+        </h3>
+        <div class="is-toastr error">
+            <div class="toastr-icon">
+                <i class="fas fa-times-circle fa-fw"></i>
+            </div>
+            <div class="toastr-content">
+                <div class="toastr-title">
+                    This is Toastr title
+                </div>
+                <div class="toastr-details">
+                    <div class="details-inline">
+                        <div class="details-inline-text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        </div>
+                        <div class="details-inline-icon expander">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="details-expand">
+                        No prey, no pay driver knave gabion broadside topmast deadlights aft snow Blimey. Parrel reef
+                        loaded to the gunwalls lad long boat gally transom starboard weigh anchor crack Jennys tea cup.
+                        Sail ho measured fer yer chains gibbet skysail mutiny run a shot across the bow grog blossom
+                        carouser gangway Spanish Main
+                    </div>
+                </div>
+            </div>
+            <div class="toastr-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="is-toastr error">
+            <div class="toastr-icon">
+                <i class="fas fa-times-circle fa-fw"></i>
+            </div>
+            <div class="toastr-content">
+                <div class="toastr-title">
+                    This is another title
+                </div>
+                <div class="toastr-descrip is-hidden">
+                    This only a small and simple Toastr description.
+                </div>
+                <div class="toastr-details">
+                    <div class="details-inline">
+                        <div class="details-inline-text">
+                            Sail ho measured fer yer chains gibbet skysail mutiny run a shot across
+                        </div>
+                        <div class="details-inline-icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="details-expand">
+                        Bilged on her anchor schooner warp lanyard fathom Shiver me timbers barkadeer bucko dead men
+                        tell no tales skysail. Yo-ho-ho carouser log gangway scurvy jib hands Chain Shot yawl barque.
+                        Salmagundi Pieces of Eight spirits yardarm square-rigged fire ship Yellow Jack gaff keelhaul
+                        cackle fruit.
+                    </div>
+                </div>
+            </div>
+            <div class="toastr-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="is-toastr error">
+            <div class="toastr-icon">
+                <i class="fas fa-times-circle fa-fw"></i>
+            </div>
+            <div class="toastr-content">
+                <div class="toastr-title">
+                    This is another title
+                </div>
+                <div class="toastr-descrip is-hidden">
+                    This only a small and simple Toastr description.
+                </div>
+                <div class="toastr-details">
+                    <div class="details-inline">
+                        <div class="details-inline-text">
+                            Sail ho measured fer yer chains gibbet skysail mutiny run a shot across
+                        </div>
+                        <div class="details-inline-icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="details-expand">
+                        Bilged on her anchor schooner warp lanyard fathom Shiver me timbers barkadeer bucko dead men
+                        tell no tales skysail. Yo-ho-ho carouser log gangway scurvy jib hands Chain Shot yawl barque.
+                        Salmagundi Pieces of Eight spirits yardarm square-rigged fire ship Yellow Jack gaff keelhaul
+                        cackle fruit.
+                    </div>
+                </div>
+            </div>
+            <div class="toastr-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const expander = document.querySelector(".details-inline-icon");
+        const hiddenContent = document.querySelector(".details-expand");
+
+        expander.addEventListener("click", function () {
+            hiddenContent.classList.toggle("is-expanded");
+            expander.classList.toggle("rotate");
+        });
+
+        // const expanders = document.querySelectorAll(".details-inline-icon");
+
+        // function selectedExpander(event) {
+        //     
+        // }
+
+        // expanders.forEach(element => element.addEventListener("click", selectedExpander));
+    </script>
 </body>
 
 </html>

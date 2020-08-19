@@ -20,39 +20,41 @@ h3:not(:first-child) {
 
 .is-toastr {
     position: relative;
+    min-width: 400px;
     max-width: 400px;
     overflow: hidden;
     color: var(--text-in-reverse-color);
     padding: 1.5em 1.5em 1.5em 4em;
-    border-radius:var(--content-border-radius);
+    margin-bottom: 1.5em;
+    border-radius: var(--content-border-radius);
     align-items: center;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .is-toastr.simple {
-    background:var(--color-secondary);
+    background: var(--color-secondary);
 }
 
 .is-toastr.success {
-    background:var(--color-success);
+    background: var(--color-success);
 }
 
 .is-toastr.error {
-    background:var(--color-danger);
+    background: var(--color-danger);
 }
 
 .toastr-icon {
     position: absolute;
-    font-size:4rem;
+    font-size: 4rem;
     opacity: .20;
     top: 10px;
     left: -25px;
 }
 
 .toastr-title {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    padding-bottom:.3em;
+    padding-bottom: .3em;
 }
 
 .toastr-descrip {
@@ -64,12 +66,50 @@ h3:not(:first-child) {
     top: 5px;
     right: 10px;
     opacity: .5;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: all .3s ease;
 }
 
 .toastr-close:hover {
     opacity: 1;
-    font-size:1.3rem;
+    font-size: 1.3rem;
+}
+
+.details-inline {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .25em;
+}
+
+.details-inline-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-style: italic;
+    color: #d8d8d8;
+}
+
+.details-inline-icon {
+    padding: 0 1em;
+    cursor: pointer;
+    transform:rotate(0);
+    transition: all .3s ease;
+}
+
+.details-inline-icon.rotate {
+    transform: rotate(90deg);
+}
+
+.details-expand {
+    display: none;
+    padding: .5em .3em 0;
+    height: 0;
+    line-height:1.5;
+    transition: all .3s ease;
+}
+
+.details-expand.is-expanded {
+    display: block;
+    height: 100%;
 }
