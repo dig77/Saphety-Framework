@@ -1,0 +1,102 @@
+body {
+    flex-direction: column;
+    background: white;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 3em;
+    color: #a5a5a5;
+}
+
+.example-container {
+    max-width: 72em;
+    margin: 2em auto;
+    width: 100%;
+}
+
+.rule-card-wrap {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.rule-card-wrap>div:first-of-type {
+    font-size: 2rem;
+    margin: 0 .7em;
+    transform: scale(-1, 1);
+    color: #d2d2d2;
+}
+
+.rule-card-wrap>form {
+    background: whitesmoke;
+    flex: 1;
+    border-radius: 5px;
+    padding: 1.5em 2em;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.rule-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: .7em;
+}
+
+.rule-explanation {
+    font-family: var(--font-family-alternative);
+    color: var(--text-alternative);
+    font-size: 1rem;
+}
+
+.rule-parameters-grid {
+    margin-top: 1.5em;
+    align-items: center;
+    display: grid;
+    grid-row-gap: 1;
+    grid-column-gap: 3em;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "input1 input1 input2 input3 input3 ."
+}
+
+.rule-parameters-grid.example-1 {
+    grid-template-areas:
+        "input1 input1 input1 . . ."
+}
+
+.rule-parameters-grid.example-2 {
+    grid-template-areas:
+        "input1 input1 . input3 input3 ."
+}
+
+.rule-parameters-grid .is-input-1 {
+    grid-area: input1;
+}
+
+.rule-parameters-grid .is-input-2 {
+    grid-area: input2;
+}
+
+.rule-parameters-grid .is-input-3 {
+    grid-area: input3;
+}
+
+.replace-by {
+    display: flex;
+    justify-content: center;
+}
+
+.replace-by-label {
+    font-size: .7rem;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    color: var(--text-alternative);
+}
+
+.replace-by-icon {
+    font-size: 1.7rem;
+    color: #c7c7c7;
+}

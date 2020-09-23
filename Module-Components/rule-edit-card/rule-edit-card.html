@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empty placeholder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+  <!-- using MUI framework for material look and feel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.10.2/css/mui.min.css"
+    integrity="sha512-a10mBlpdGwQPpu2Ogh03RMI+Bf+nj5pg/dG8bQD5l6FrRFnPz47tq4wZqBjSDCfQo5Iq/ILHo+lZ30cWZf4oTA=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../../stylo.css" />
+  <link rel="stylesheet" href="rule-edit-card.css" />
+
+</head>
+
+<body>
+  <div class="example-container">
+    <!-- Rule and Explanation only -->
+    <h3>Rule and Explanation only</h3>
+    <div class="rule-card-wrap">
+      <div>
+        <i class="fas fa-level-up-alt"></i>
+      </div>
+      <!-- form -->
+      <form class="rule-type-edition-wrapper mui-form" name="formRuleTextReplace" (submit)="setRegEx()">
+        <div class="rule-name-explanation">
+          <span class="rule-name">Rule Name</span>
+          <span class="rule-explanation">Rule Explanation</span>
+        </div>
+      </form>
+    </div>
+    <!-- 1 Input -->
+    <h3>1 Input</h3>
+    <div class="rule-card-wrap">
+      <!-- form -->
+      <form class="rule-type-edition-wrapper mui-form" name="formRuleTextReplace" (submit)="setRegEx()">
+        <div class="rule-name-explanation">
+          <span class="rule-name">Rule Name</span>
+          <span class="rule-explanation">Rule Explanation</span>
+        </div>
+        <div class="rule-parameters-grid example-1">
+          <!-- Regular expression to match -->
+          <div class="mui-textfield mui-textfield--float-label is-input-1">
+            <input type="text">
+            <label>RegularExpresion</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- 2 Inputs -->
+    <h3>2 Inputs</h3>
+    <div class="rule-card-wrap">
+      <!-- form -->
+      <form class="rule-type-edition-wrapper mui-form" name="formRuleTextReplace" (submit)="setRegEx()">
+        <div class="rule-name-explanation">
+          <span class="rule-name">Rule Name</span>
+          <span class="rule-explanation">Rule Explanation</span>
+        </div>
+        <div class="rule-parameters-grid example-2">
+          <!-- Regular expression to match -->
+          <div class="mui-textfield mui-textfield--float-label is-input-1">
+            <input type="text">
+            <label>RegularExpresion</label>
+          </div>
+          <!-- New text -->
+          <div class="mui-textfield mui-textfield--float-label is-input-3">
+            <input type="text">
+            <label>New text</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <h3>2 Inputs related</h3>
+    <div class="rule-card-wrap">
+      <!-- form -->
+      <form class="rule-type-edition-wrapper mui-form" name="formRuleTextReplace" (submit)="setRegEx()">
+        <div class="rule-name-explanation">
+          <span class="rule-name">Rule Name</span>
+          <span class="rule-explanation">Rule Explanation</span>
+        </div>
+        <div class="rule-parameters-grid">
+          <!-- Regular expression to match -->
+          <div class="mui-textfield mui-textfield--float-label is-input-1">
+            <input type="text">
+            <label>RegularExpresion</label>
+          </div>
+          <div class="replace-by is-input-2">
+            <div class="replace-by-label is-hidden">Replace by</div>
+            <div class="replace-by-icon"><i class="fas fa-arrow-circle-right"></i></div>
+          </div>
+          <!-- New text -->
+          <div class="mui-textfield mui-textfield--float-label is-input-3">
+            <input type="text">
+            <label>New text</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- using MUI framework for material look and feel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.10.2/js/mui.min.js"
+    integrity="sha512-Z3+EzzqN5iM98TANWWwKV0RfZAYYTW4y5g9UuWSxRTkN81uYZOsoFEb1bgL4kmnLI2qmYl9IS/mJ3EIjEjpK/g=="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
